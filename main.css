@@ -278,10 +278,10 @@ body {
     width: 100%;
     border: none;
     margin-bottom: 120px;
+    margin-top: 70px;
 }
 
 #item1 {
-    border-bottom: dashed 1px grey;
     border-right: dashed 1px grey;
     height: 250px;
 
@@ -289,25 +289,11 @@ body {
 
 #item2 {
     text-align: right;
-    border-bottom: dashed 1px grey;
     border-left: dashed 1px grey;
     height: 250px;
 
 }
 
-#item3 {
-    border-top: dashed 1px grey;
-    border-right: dashed 1px grey;
-    height: 250px;
-
-}
-
-#item4 {
-    text-align: right;
-    border-top: dashed 1px grey;
-    border-left: dashed 1px grey;
-    height: 250px;
-}
 
 #footer {
     background-color: #2C3840;
