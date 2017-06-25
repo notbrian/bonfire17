@@ -24,26 +24,8 @@ body {
     margin-right: 0;
 }
 
-.container-fluid {
-  padding: 0px;
-}
-
 .center {
     text-align: center;
-}
-
-
-#landing-btn {
-    background-color: #F9BB3C;
-    color: #FFF;
-    border: none;
-    padding: 15px 25px;
-}
-
-#landing-btn:hover {
-    background-color: 0.25s ease;
-    background-color: #35BAA4;
-    transition: background-color 0.25s ease;
 }
 
 #buy {
@@ -78,43 +60,85 @@ body {
 
 
 #background {
-    padding-top: 150px;
-    background-color: #3B465C;
     background: url("images/bonfire.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 300px;
-    height: 530px;
-    margin: 0 auto;
+    min-height: 640px;
+    height: 640px;
 }
 
-#landing h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    font-size: 75px;
-    margin-bottom: -15px;
-    margin-top: 7vh;
-    color: #E9E8D4;
+#landing-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin-top: 20px;
+    margin-right: 10px;
+
+
+    background-color: #95D7A1;
+    color: #FFF;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
 }
 
-#landing h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    color: #9ba0a6;
-    margin-bottom: 15px;
+#landing-btn:hover {
+    background-color: #98CEEF;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
 }
 
-#landing p {
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    color: #E9E8D4;
-    margin-bottom: 30px;
-    width: 500px;
+.logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 110px;
+  z-index: 2;
+  margin-top: 8px;
+
+}
+
+.landing {
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
+    left: 0;
+    right: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 130px;
+
+    outline: 2px solid #FFF;
+    outline-offset: 8px;
+
+    background-color: #FFF;
+    width: 450px;
+}
+
+.landing h1 {
+  font-size: 65px;
+  color: #E8ADC6;
+  opacity: 0.80;
+  margin-bottom: 5px;
+
+}
+
+.landing p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14x;
+    color: #7F7E7E;
 }
 
 .year {
@@ -123,9 +147,9 @@ body {
 
 #details {
     text-align: center;
-    background-color: #35BAA4;
+    background-color: #98CEEF;
     color: #fff;
-    padding: 30px;
+    padding: 10px;
 }
 
 #details h4 {
@@ -159,7 +183,6 @@ body {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
-
 
 .learn {
     color: #FFF;
@@ -324,7 +347,6 @@ body {
     background-color: #35BAA4;
     transition: background-color 0.25s ease;
 }
-
 .faq {
   background-color: #35BAA4;
   color: white;
