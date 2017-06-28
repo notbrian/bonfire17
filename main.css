@@ -398,6 +398,10 @@ header a:hover {
     margin-bottom: 30px;
 }
 
+#buynow {
+  display: block;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 1440px) {
@@ -481,4 +485,13 @@ header a:hover {
     margin-bottom: 50px;
   }
 
+  #buynow {
+    display: none;
+  }
+}
+
+
+
+video {
+  width: 100%;
 }
