@@ -2,6 +2,16 @@ body {
     font-family: 'Lato', sans-serif;
     text-transform: lowercase;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+    color: #FFF;
+}
+
 @font-face {
   font-family: 'cipherIconFont';
   src: url("fonts/icomoon.eot?p7vee9");
@@ -20,12 +30,55 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+header {
+  transition: transform 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  padding: 15px 25px;
+}
+
+header a {
+  margin-right: 10px;
+  color: #FFF;
+}
+
+header a:hover {
+  color: #FFF;
+  text-decoration: none;
+  transform: translate(20px, 20px);
+}
+
+
 .row {
     margin-right: 0;
 }
 
 .center {
     text-align: center;
+}
+
+.grow {
+  transition: transform 1s;
+
+}
+
+.grow:hover {
+  transform: translate(0px, 9px);
+}
+
+.grow-small {
+  transition: transform 1s;
+
+}
+
+.grow-small:hover {
+  transform: translate(0px, 6px);
+}
+
+.grow-small:focus {
+  outline:none;
 }
 
 #buy {
@@ -35,20 +88,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    width: 310px;
+    width: 350px;
     height: 90px;
     text-align: center;
     padding: 15px 60px 15px 60px;
     /*transition: font-size 0.3s ease;*/
     font-size: 40px;
     /*transition: background-color 0.5s ease;*/
-    background-color: #DF4E5E;
+    background-color: #95D7A1;
     color: #FFF;
     border: none;
     border-radius: 5px;
     text-decoration: none;
      margin: auto;
-     opacity: 0.80;
+     opacity: 0.87;
     -webkit-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
     transform: scale(1, 1)
@@ -75,22 +128,13 @@ body {
     right: 0;
     z-index: 2;
     margin-top: 20px;
-    margin-right: 10px;
-
+    margin-right: 17px;
 
     background-color: #95D7A1;
     color: #FFF;
     border: none;
     padding: 15px 25px;
     border-radius: 5px;
-}
-
-#landing-btn:hover {
-    background-color: #98CEEF;
-    -webkit-transition: background-color 0.5s ease-in;
-    -moz-transition: background-color 0.5s ease-in;
-    -o-transition: background-color 0.5s ease-in;
-    transition: background-color 0.5s ease-in;
 }
 
 .logo {
@@ -145,10 +189,9 @@ body {
 
 #details {
     text-align: center;
-    background-color: #98CEEF;
+    background-color: #83bbde;
     color: #fff;
-    padding-top: 7px;
-    padding-bottom: 17px;
+    padding: 13px;
 }
 
 #details h4 {
@@ -255,10 +298,9 @@ body {
 }
 
 .wyg {
-    background-color: #282249;
+    background-color: #776EA7;
     padding-top: 20px;
-    padding-bottom: 150px;
-    margin-top: -10px;
+    padding-bottom: 120px;
 }
 
 .wyg p {
@@ -280,22 +322,53 @@ body {
 }
 
 #item1 {
-    border-right: dashed 1px grey;
+    border-right: dashed 1px rgba(255, 255, 255, 0.6);
     height: 250px;
-
 }
 
 #item2 {
     text-align: right;
-    border-left: dashed 1px grey;
+    border-left: dashed 1px rgba(255, 255, 255, 0.6);
     height: 250px;
+}
 
+.faq {
+  background-color: #2eb39d;
+  color: white;
+  padding-bottom: 120px;
+}
+
+.faq p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size:17px;
+}
+
+.faq h1 {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.faq h4 {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+.question {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.questionright {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 #footer {
-    background-color: #2C3840;
+    background-color: #F8D487;
     text-align: center;
-    border-top: solid 1px #2C3840;
+    border-top: solid 1px #F8D487;
     padding-top: 30px;
 }
 
@@ -317,7 +390,7 @@ body {
 }
 
 #way-up {
-    background-color: #DF4E5E;
+    background-color: #FCC95B;
     color: #FFF;
     border: none;
     padding: 5px 25px;
@@ -325,27 +398,35 @@ body {
     margin-bottom: 30px;
 }
 
-#way-up:hover {
-    background-color: 0.25s ease;
-    background-color: #35BAA4;
-    transition: background-color 0.25s ease;
-}
-.faq {
-  background-color: #35BAA4;
-  color: white;
-}
-
-.question {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.questionright {
-  margin-top: 10px;
-  margin-right: 10px;
-}
 
 /* Media Queries */
+@media screen and (min-width: 1440px) {
+
+  #background {
+      height: 840px;
+  }
+
+}
+
+@media(max-width: 1439px) {
+
+  #background {
+      height: 640px;
+  }
+
+}
+
+@media(max-width: 991px) {
+  #item1 {
+      border-right: none;
+
+  }
+
+  #item2 {
+    border-left: none;
+
+  }
+}
 
 @media (max-width: 600px) {
 
@@ -355,12 +436,13 @@ body {
 
   .logo {
     width: 80px;
-    margin-top: 35px;
+    margin-top: 25px;
 
   }
 
   .landing {
       width: 350px;
+      margin-top: 120px;
   }
 
   .landing h1 {
@@ -371,6 +453,32 @@ body {
 
   .landing p {
       font-size: 12x;
+  }
+
+  #landing-btn {
+      position: static;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 270px;
+  }
+
+  header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 330px;
+  }
+
+  header a {
+    margin-right: 10px;
+    color: #FFF;
+  }
+
+  #item1 {
+    margin-bottom: 50px;
   }
 
 }
