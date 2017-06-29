@@ -50,7 +50,6 @@ header a:hover {
   transform: translate(20px, 20px);
 }
 
-
 .row {
     margin-right: 0;
 }
@@ -233,8 +232,6 @@ header a:hover {
     font-weight: 700;
     font-size: 50px;
     /*border-bottom: 1px solid rgba(155, 160, 166, 0.2);*/
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .speakers-bg {
@@ -298,14 +295,14 @@ header a:hover {
 }
 
 .wyg {
-    background-color: #776EA7;
+    background-color: #2eb39d;
     padding-top: 20px;
     padding-bottom: 120px;
 }
 
 .wyg p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size:17px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size:16px;
 }
 
 .wyg h1 {
@@ -317,8 +314,22 @@ header a:hover {
 #wyg-title {
     width: 100%;
     border: none;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     margin-top: 70px;
+    margin-left: 25px;
+}
+
+.faq #wyg-title {
+  margin-bottom: 20px;
+}
+
+#wyg-p {
+  margin-left: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size:18px;
+  margin-right: 75px;
+  margin-bottom: 50px;
+
 }
 
 #item1 {
@@ -332,15 +343,23 @@ header a:hover {
     height: 250px;
 }
 
+#wyg-row {
+  border-top: dashed 1px rgba(255, 255, 255, 0.6);
+}
+
+#faq-row {
+  margin-bottom: 17px;
+}
+
 .faq {
-  background-color: #2eb39d;
+  background-color: #776EA7;
   color: white;
-  padding-bottom: 120px;
+  padding-bottom: 87px;
 }
 
 .faq p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size:17px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size:16px;
 }
 
 .faq h1 {
@@ -369,12 +388,12 @@ header a:hover {
     background-color: #F8D487;
     text-align: center;
     border-top: solid 1px #F8D487;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 #footer img {
     width: 225px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 }
 
 #footer i {
@@ -395,7 +414,8 @@ header a:hover {
     border: none;
     padding: 5px 25px;
     border-radius: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-top: 5px;
 }
 
 #buynow {
@@ -482,7 +502,7 @@ header a:hover {
   }
 
   #item1 {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   #buynow {
@@ -490,7 +510,29 @@ header a:hover {
   }
 }
 
+@media (max-width: 320px) {
 
+  #item1 {
+    margin-bottom: 125px;
+  }
+
+  .landing {
+      width:225px;
+  }
+
+  .landing h1 {
+    font-size: 35px;
+  }
+
+  .landing p {
+    font-size: 12px;
+  }
+
+  #details h4 {
+    font-size: 13px;
+  }
+
+}
 
 video {
   width: 100%;
