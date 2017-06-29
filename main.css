@@ -58,6 +58,10 @@ header a:hover {
     text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 .grow {
   transition: transform 0.5s ease;
 
@@ -295,7 +299,7 @@ header a:hover {
 }
 
 .wyg {
-    background-color: #2eb39d;
+    background-color: #776EA7;
     padding-top: 20px;
     padding-bottom: 120px;
 }
@@ -352,7 +356,7 @@ header a:hover {
 }
 
 .faq {
-  background-color: #776EA7;
+  background-color: #d18bab;
   color: white;
   padding-bottom: 87px;
 }
@@ -388,12 +392,17 @@ header a:hover {
     background-color: #F8D487;
     text-align: center;
     border-top: solid 1px #F8D487;
-    padding-top: 35px;
+    padding-top: 40px;
 }
 
 #footer img {
-    width: 225px;
-    margin-bottom: 25px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#cipher {
+  margin-right: 30px;
+
 }
 
 #footer i {
@@ -415,7 +424,7 @@ header a:hover {
     padding: 5px 25px;
     border-radius: 3px;
     margin-bottom: 35px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 #buynow {
@@ -450,6 +459,15 @@ header a:hover {
     border-left: none;
 
   }
+
+  .questionright {
+    margin-left: 10px;
+  }
+
+  #buynow {
+    display: none;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -505,9 +523,6 @@ header a:hover {
     margin-bottom: 70px;
   }
 
-  #buynow {
-    display: none;
-  }
 }
 
 @media (max-width: 320px) {
