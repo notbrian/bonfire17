@@ -17,6 +17,10 @@ a:link, a:hover, a:active, a:visited, a:focus {
     color: #FFF;
 }
 
+video {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'cipherIconFont';
   src: url("fonts/icomoon.eot?p7vee9");
@@ -127,7 +131,7 @@ header a:hover {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 640px;
+    height: 91.9vh;
 }
 
 #landing-btn {
@@ -306,7 +310,7 @@ header a:hover {
 .wyg {
     background-color: #776EA7;
     padding-top: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 
 .wyg p {
@@ -341,18 +345,20 @@ header a:hover {
 }
 
 #item1 {
-    border-right: dashed 1px rgba(255, 255, 255, 0.6);
-    height: 250px;
+    border-right: dashed 1.25px rgba(255, 255, 255, 0.6);
+    height: 190px;
 }
 
 #item2 {
     text-align: right;
-    border-left: dashed 1px rgba(255, 255, 255, 0.6);
-    height: 250px;
 }
 
 #wyg-row {
-  border-top: dashed 1px rgba(255, 255, 255, 0.6);
+  border-top: dashed 1.25px rgba(255, 255, 255, 0.6);
+}
+
+#wyg-row h1 {
+  padding-top: 10px;
 }
 
 #faq-row {
@@ -362,7 +368,7 @@ header a:hover {
 .faq {
   background-color: #d18bab;
   color: white;
-  padding-bottom: 87px;
+  padding-bottom: 68px;
 }
 
 .faq p {
@@ -437,23 +443,37 @@ header a:hover {
 
 
 /* Media Queries */
+
 @media screen and (min-width: 1440px) {
-
   #background {
-      height: 840px;
+    height: 93vh;
   }
-
-}
-
-@media(max-width: 1439px) {
-
-  #background {
-      height: 640px;
-  }
-
 }
 
 @media(max-width: 991px) {
+  #wyg-row h1 {
+    padding-top: 0px;
+  }
+
+  .wyg {
+      padding-bottom: 85px;
+  }
+
+  #wyg-p {
+    margin-bottom: 30px;
+  }
+
+  #wyg-title {
+    margin-bottom: 20px;
+  }
+
+  #item1 {
+    height: 125px;
+  }
+
+  #item2 {
+      text-align: left;
+  }
 
   #faq-row {
     margin-bottom: 17px;
@@ -473,7 +493,7 @@ header a:hover {
   }
 
   .wyg p {
-    font-size:14px;
+    font-size:16px;
   }
 
   .wyg h1 {
@@ -510,11 +530,29 @@ header a:hover {
 
 }
 
+@media(max-width: 767px) {
+  #item2 {
+    margin-top: -18px;
+  }
+
+
+}
+
 @media (max-width: 600px) {
-
-
   #background {
-      height: 400px;
+    height: 91vh;
+  }
+
+  #item2 {
+    margin-top: -25px;
+  }
+
+  .wonderful {
+    margin-top: -35px;
+  }
+
+  #item1 {
+    height: 175px;
   }
 
   .logo {
@@ -524,18 +562,18 @@ header a:hover {
   }
 
   .landing {
-      width: 350px;
+      width: 305px;
       margin-top: 120px;
   }
 
   .landing h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 5px;
 
   }
 
   .landing p {
-      font-size: 12x;
+      font-size: 12px;
   }
 
   #landing-btn {
@@ -564,8 +602,20 @@ header a:hover {
     margin-bottom: 20px;
   }
 
+  #wyg-p {
+    font-size: 15px;
+  }
+
+  .wyg p {
+      font-size: 15px;
+  }
+
+.faq p {
+    font-size: 15px;
+
 }
 @media (max-width: 320px) {
+
 
   #item1 {
     margin-bottom: 125px;
@@ -587,8 +637,4 @@ header a:hover {
     font-size: 13px;
   }
 
-}
-
-video {
-  width: 100%;
 }
